@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card mangement</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family:  sans-serif;
+            background-color: #e3e3e3;
+            padding: 10px;
+        }
+        .card-container{
+            display: flex;
+          
+            gap: 2px;
+            justify-content: center;
+            align-items: center;
+          
+        }
+        .card{
+            width:320;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .items-grid {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 15px 10px;
+        }
+        .item {
+            width: calc(50% - 5px);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .image-box {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .item-lable {
+            font-size: 14px;
+            color: #333;
+            margin-top: 10px;
+        }
+        .card-link{
+            display: inline-block;
+            margin-top: 10px;
+            color: #007185;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+       .card-link:hover {
+            color: #c7511f;
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+<body>
+  <main class="card-container">
+    <section class="card">
+    <h2 class="card-title">Revamp your home in style</h2>
+    <div class="items-grid">
+    <div class="item">
+    
+        <div class="image-box">
+            <img src="https://picsum.photos/200/300" alt="">
+        </div>
+    
+        <p class="item-lable">Cushion covers, bedsheets & more</p>
+    </div>
+    
+    <div class="item">
+    
+        <div class="image-box">
+            <img src="https://picsum.photos/200/300" alt="">
+        </div>
+    
+        <p class="item-lable">Cushion covers, bedsheets & more</p>
+    </div>
+    
+    <div class="item">
+    
+        <div class="image-box">
+            <img src="https://picsum.photos/200/300" alt="">
+        </div>
+        <p class="item-lable">Cushion covers, bedsheets & more</p>
+    </div>
+    
+    <div class="item">
+    
+        <div class="image-box">
+            <img src="https://picsum.photos/200/300" alt="">
+        </div>
+    
+        <p class="item-lable">Cushion covers, bedsheets & more</p>
+    </div>
+    </div>
+
+    <a href="#" class="card-link">Explore all</a>
+    </section>
+<!-- second section -->
+    <section class="card">
+    <h2 class="card-title">Revamp your home in style</h2>
+    <div class="items-grid">
+
+    <div class="item">
+    
+        <div class="image-box">
+            <img src="https://picsum.photos/200/300" alt="">
+        </div>
+    
+        <p class="item-lable">Cushion covers, bedsheets & more</p>
+    </div>
+    
+    <div class="item">
+    
+        <div class="image-box">
+            <img src="https://picsum.photos/200/300" alt="">
+        </div>
+    
+        <p class="item-lable">Cushion covers, bedsheets & more</p>
+    </div>
+    
+    <div class="item">
+    
+        <div class="image-box">
+            <img src="https://picsum.photos/200/300" alt="">
+        </div>
+        <p class="item-lable">Cushion covers, bedsheets & more</p>
+    </div>
+    
+    <div class="item">
+    
+        <div class="image-box">
+            <img src="https://picsum.photos/200/300" alt="">
+        </div>
+    
+        <p class="item-lable">Cushion covers, bedsheets & more</p>
+    </div>
+
+   </div>
+    <a href="#" class="card-link">See all offers</a>
+    </section>
+  </main>
+
+</body>
+</html>
